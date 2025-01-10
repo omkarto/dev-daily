@@ -1,0 +1,95 @@
+.home-one.hero-area {
+    height: 500px;
+    position: relative;
+    background: url(./src/assets/home-banner.jpg) no-repeat scroll center / cover;
+}
+
+
+@media (min-width: 576px) {
+    .home-one.hero-area {
+        height: 650px;
+    }
+}
+
+@media (min-width: 992px) {
+    .home-one.hero-area {
+        height: 750px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-one.hero-area {
+        height: 850px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .home-one.hero-area {
+        height: 1080px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1260px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-one .hero-content__title {
+        font-size: 150px;
+    }
+}
+
+@media (min-width: 576px) {
+    .home-one .hero-content__desc {
+        font-size: 48px;
+    }
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.home-one .hero-content {
+    padding-top: 200px;
+}
+
+.home-one .hero-content__title {
+    font-size: 70px;
+    text-transform: capitalize;
+    font-family: "Marck Script", cursive;
+    margin-bottom: 10px;
+    color: #fff;
+    line-height: 1;
+    font-weight: regular;
+}
+
+.home-one .hero-content__desc {
+    font-size: 35px;
+    font-family: "Segoe Script Regular";
+    color: #fff;
+    line-height: 1;
+    font-weight: regular;
+}

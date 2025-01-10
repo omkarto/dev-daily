@@ -1,0 +1,7 @@
+{
+    "id": 1,
+    "title": "Getting Started with React",
+    "content": "<p>React is a popular JavaScript library for building user interfaces. Created by Facebook, it has gained widespread adoption in the web development community due to its efficiency and flexibility.</p><h2>Why React?</h2><p>React offers several advantages:</p><ul><li>Component-based architecture</li><li>Virtual DOM for improved performance</li><li>Rich ecosystem and community support</li></ul><h2>Setting Up Your First React App</h2><p>To get started with React, you can use Create React App, a comfortable environment for learning React, and the best way to start building a new single-page application in React.</p><pre><code>npx create-react-app my-first-react-app\ncd my-first-react-app\nnpm start</code></pre><p>This will set up a new React project and start a development server. Open your browser and navigate to <code>http://localhost:3000</code> to see your new React app in action!</p>",
+    "date": "2025-01-05T12:00:00Z"
+  }
+  
