@@ -1,7 +1,13 @@
 {
-    "id": 1,
-    "title": "Getting Started with React",
-    "content": "<p>React is a popular JavaScript library for building user interfaces. Created by Facebook, it has gained widespread adoption in the web development community due to its efficiency and flexibility.</p><h2>Why React?</h2><p>React offers several advantages:</p><ul><li>Component-based architecture</li><li>Virtual DOM for improved performance</li><li>Rich ecosystem and community support</li></ul><h2>Setting Up Your First React App</h2><p>To get started with React, you can use Create React App, a comfortable environment for learning React, and the best way to start building a new single-page application in React.</p><pre><code>npx create-react-app my-first-react-app\ncd my-first-react-app\nnpm start</code></pre><p>This will set up a new React project and start a development server. Open your browser and navigate to <code>http://localhost:3000</code> to see your new React app in action!</p>",
-    "date": "2025-01-05T12:00:00Z"
-  }
-  
+  "id": 1,
+  "title": "The Future of Artificial Intelligence in Web Development",
+  "heroImage": "https://example.com/images/ai-hero.jpg",
+  "date": "May 15, 2025",
+  "author": "Jane Doe",
+  "authorImage": "https://example.com/images/jane-doe.jpg",
+  "authorBio": "Jane Doe is a senior web developer and AI enthusiast with over 10 years of experience in the tech industry.",
+  "category": "Technology",
+  "body": "<p>Artificial Intelligence is rapidly changing the landscape of web development. From chatbots to personalized user experiences, AI is revolutionizing how we interact with websites and web applications.</p><h2>The Rise of AI-Powered Web Development</h2><p>In recent years, we've seen a significant increase in the use of AI technologies in web development. These advancements are not just improving user experiences but also streamlining the development process itself.</p><h2>Key Areas Where AI is Making an Impact</h2><ul><li>Automated Code Generation</li><li>Intelligent Design Systems</li><li>Predictive User Behavior Analysis</li><li>Enhanced Security Measures</li></ul><p>As we look to the future, it's clear that AI will continue to play a crucial role in shaping the web development landscape. Developers who embrace these technologies will be well-positioned to create more innovative, efficient, and user-friendly web experiences.</p>",
+  "tags": ["Artificial Intelligence", "Web Development", "Future Tech"],
+  "relatedPosts": [2, 3]
+}

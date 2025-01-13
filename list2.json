@@ -1,0 +1,23 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Getting Started with React",
+        "excerpt": "React is a popular JavaScript library for building user interfaces. In this post, we'll cover the basics of React and how to get started with your first React application.",
+        "date": "2025-01-05T12:00:00Z"
+      },
+      {
+        "id": 2,
+        "title": "The Power of CSS Grid",
+        "excerpt": "CSS Grid is a powerful layout system that allows for complex web designs. Learn how to use CSS Grid to create responsive and flexible layouts for your websites.",
+        "date": "2025-01-08T14:30:00Z"
+      },
+      {
+        "id": 3,
+        "title": "JavaScript ES6 Features You Should Know",
+        "excerpt": "ES6 introduced many new features to JavaScript. In this post, we'll explore some of the most useful ES6 features that every developer should be familiar with.",
+        "date": "2025-01-10T09:15:00Z"
+      }
+    ]
+  }
+  

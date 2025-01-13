@@ -1,18 +1,49 @@
 import  { useState } from 'react';
 import pageData from '../../page.json';
+import { Link } from 'react-router-dom';
+import './detail.css';
 
-const BlogPost = () => {
-  const [post, _] = useState(pageData as any) ;
-  if (!post) {
-    return <div>Post not found</div>;
-  }
+const BlogPost = ( ) => {
+  const post = pageData
   return (
-    <div className="blog-post">
-      <h1>{post.title}</h1>
-      <p className="post-meta">Published on {new Date(post.date).toLocaleDateString()}</p>
-      <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content }} />
-    </div>
+    <article className="blog-detail">
+      <div className="hero-image" style={{backgroundImage: `url(${post.heroImage})`}}>
+        <div className="hero-overlay">
+          <h1>{post.title}</h1>
+          <div className="meta">
+            <span className="date">{post.date}</span>
+            <span className="author">By {post.author}</span>
+          </div>
+        </div>
+      </div>
+      <div className="content-wrapper">
+        <aside className="sidebar">
+          <div className="category-tag">{post.category}</div>
+          <div className="share-buttons">
+            <button>Share</button>
+            <button>Tweet</button>
+          </div>
+        </aside>
+        <main className="main-content">
+          <div className="body" dangerouslySetInnerHTML={{ __html: post.body }} />
+          <div className="tags">
+            {post.tags.map(tag => (
+              <span key={tag} className="tag">{tag}</span>
+            ))}
+          </div>
+          <div className="author-bio">
+            <img src={post.authorImage} alt={post.author} className="author-image" />
+            <div className="author-info">
+              <h3>{post.author}</h3>
+              <p>{post.authorBio}</p>
+            </div>
+          </div>
+        </main>
+      </div>
+      <Link to="/" className="back-link">Back to Blog</Link>
+    </article>
   );
 };
 
 export default BlogPost;
+
