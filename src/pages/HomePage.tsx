@@ -7,7 +7,6 @@ import TopicSidebar from "./Toolbar";
 import ImageSlider from "./ImageSlide";
 import { Helmet } from "react-helmet";
 import { useState } from "react";
-import BlogList from "./BlogList";
 
 const HomePage = () => {
   const postsData1 = blogData1.posts;
@@ -97,7 +96,7 @@ const HomePage = () => {
                 </div>
                 <div className="view-all-container">
                 <Link 
-                  to={`/category/${category.toLowerCase().replace(/\s+/g, '-')}`} 
+                  to={`/blogs/${category.toLowerCase().replace(/\s+/g, '-')}`} 
                   className="view-all-button"
                 >
                   View All {category} Posts
@@ -108,11 +107,11 @@ const HomePage = () => {
           </main>
         </div>
         <ImageSlider slides={slides} />
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
-        <div className="home-page">
-      <h1>Latest Blog Posts</h1>
-      <BlogList blogs={postsData1} />
-    </div>
         <Footer />
       </div>
     </>

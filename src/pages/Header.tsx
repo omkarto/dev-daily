@@ -6,7 +6,7 @@ const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [subscriptionType, setSubscriptionType] = useState(null);
 
-  const openModal = (type) => {
+  const openModal = (type:any) => {
     setSubscriptionType(type);
     setIsModalOpen(true);
   };
@@ -16,7 +16,7 @@ const Header = () => {
     setSubscriptionType(null);
   };
 
-  const handleSubscription = (e) => {
+  const handleSubscription = (e:any) => {
     e.preventDefault();
     // Add subscription logic here
     alert(`Subscribed with ${subscriptionType}`);

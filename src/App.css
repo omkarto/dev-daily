@@ -1,7 +1,7 @@
 .home-one.hero-area {
     height: 500px;
     position: relative;
-    background: url(./src/assets/home-banner.jpg) no-repeat scroll center / cover;
+    background: url(../assets/home-banner.jpg) no-repeat scroll center / cover;
 }
 
 

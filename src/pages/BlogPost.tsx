@@ -21,7 +21,6 @@ const BlogPost = ( ) => {
           <div className="category-tag">{post.category}</div>
           <div className="share-buttons">
             <button>Share</button>
-            <button>Tweet</button>
           </div>
         </aside>
         <main className="main-content">
@@ -31,13 +30,13 @@ const BlogPost = ( ) => {
               <span key={tag} className="tag">{tag}</span>
             ))}
           </div>
-          <div className="author-bio">
+          {/* <div className="author-bio">
             <img src={post.authorImage} alt={post.author} className="author-image" />
             <div className="author-info">
               <h3>{post.author}</h3>
               <p>{post.authorBio}</p>
             </div>
-          </div>
+          </div> */}
         </main>
       </div>
       <Link to="/" className="back-link">Back to Blog</Link>

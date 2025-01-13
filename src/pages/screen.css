@@ -106,7 +106,7 @@ h1 {
 
 
 .hero {
-  background: url(./src/assets/home-banner.jpg) no-repeat scroll center / cover;
+  background: url(../assets/home-banner.jpg) no-repeat scroll center / cover;
   height: 60vh;
   display: flex;
   align-items: center;
