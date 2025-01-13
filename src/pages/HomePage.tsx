@@ -7,6 +7,7 @@ import TopicSidebar from "./Toolbar";
 import ImageSlider from "./ImageSlide";
 import { Helmet } from "react-helmet";
 import { useState } from "react";
+import { AnimatedSVG } from "../back";
 
 const HomePage = () => {
   const postsData1 = blogData1.posts;
@@ -29,17 +30,34 @@ const HomePage = () => {
   };
 
   const slides = [
-    { url: "http://localhost:3000/image-1.jpg", title: "beach" },
-    { url: "http://localhost:3000/image-2.jpg", title: "boat" },
-    { url: "http://localhost:3000/image-3.jpg", title: "forest" },
-    { url: "http://localhost:3000/image-4.jpg", title: "city" },
-    { url: "http://localhost:3000/image-5.jpg", title: "italy" },
+    {
+      url: "http://localhost:3000/image-1.jpg",
+      title: "The Future of Artificial Intelligence in Web Development",
+      component: AnimatedSVG(1),
+      id:"1",
+      count:"30"
+    },
+    {
+      url: "http://localhost:3000/image-2.jpg",
+      component: AnimatedSVG(2),
+      title: "The Power of CSS Grid",
+      id:"1",
+      count:"30"
+    },
+    {
+      url: "http://localhost:3000/image-3.jpg",
+      component: AnimatedSVG(3),
+      title: "JavaScript ES6 Features You Should Know",
+      id:"1",
+      count:"30"
+    },
   ];
+
   return (
     <>
       <Helmet>
         <script type="application/ld+json">
-        {`
+          {`
           {
             "@context": "https://schema.org",
             "@type": "WebSite",
@@ -95,23 +113,22 @@ const HomePage = () => {
                   ))}
                 </div>
                 <div className="view-all-container">
-                <Link 
-                  to={`/blogs/${category.toLowerCase().replace(/\s+/g, '-')}`} 
-                  className="view-all-button"
-                >
-                  View All {category} Posts
-                </Link>
-              </div>
+                  <Link
+                    to={`/blogs/${category.toLowerCase().replace(/\s+/g, "-")}`}
+                    className="view-all-button"
+                  >
+                    View All {category} Posts
+                  </Link>
+                </div>
               </section>
             ))}
           </main>
         </div>
         <ImageSlider slides={slides} />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
+        <br />
+        <br />
+        <br />
+        <br />
         <Footer />
       </div>
     </>

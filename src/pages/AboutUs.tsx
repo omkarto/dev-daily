@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './about.css';
+import { p1 } from '../profile';
 
 const AboutUs = () => {
   return (
@@ -23,7 +24,7 @@ const AboutUs = () => {
         <div className="team-section">
           {teamMembers.map((member, index) => (
             <div key={index} className="team-member">
-              <img src={member.image} alt={member.name} />
+               {p1}
               <h3>{member.name}</h3>
               <p className="role">{member.role}</p>
               <p>{member.bio}</p>

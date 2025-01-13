@@ -4,6 +4,9 @@
     background: url(../assets/home-banner.jpg) no-repeat scroll center / cover;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+  }
 
 @media (min-width: 576px) {
     .home-one.hero-area {

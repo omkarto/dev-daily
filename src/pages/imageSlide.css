@@ -55,12 +55,12 @@
 .slider-container {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 480px;
 }
 
 .overlay-text {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
