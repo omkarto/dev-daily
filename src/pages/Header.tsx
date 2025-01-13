@@ -67,7 +67,7 @@ const Header = () => {
             <h2>
               {subscriptionType === 'newsletter' 
                 ? 'Subscribe to Our Newsletter' 
-                : 'Get Premium Access'}
+                : 'Request Premium Access'}
             </h2>
             <form onSubmit={handleSubscription}>
               <input 
@@ -76,18 +76,11 @@ const Header = () => {
                 required 
                 aria-label="Email address"
               />
-              {subscriptionType === 'premium' && (
-                <input 
-                  type="password" 
-                  placeholder="Choose a password" 
-                  required 
-                  aria-label="Password"
-                />
-              )}
+            
               <button type="submit">
                 {subscriptionType === 'newsletter' 
                   ? 'Subscribe' 
-                  : 'Get Access'}
+                  : 'Request Access'}
               </button>
             </form>
           </div>

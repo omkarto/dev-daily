@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /blog/
+Allow: /blogs/
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+Sitemap: https://devdaily.xyz/sitemap.xml
