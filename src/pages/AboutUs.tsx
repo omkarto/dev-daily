@@ -46,19 +46,19 @@ const teamMembers = [
     name: "Omkar Tondawalkar",
     role: "Content Strategist & Lead Developer",
     bio: "Omkar is a passionate software developer with 10+ years of experience in full-stack development. He Writes in Dev Tech Daily to share his knowledge and experiences with the tech community.",
-    image: "../assets/profile.png"
+    image: "../assets/profile.jpg"
   },
   {
     name: "Arti Kharade",
     role: "Founder & Editor",
     bio: "Arti is a content expert who loves to write and curate engaging tech content. She is dedicated to making complex topics accessible and enjoyable for readers of all skill levels.",
-    image: "../assets/profile.png"
+    image: "../assets/profile.jpg"
   },
   {
     name: "Mark Johnson",
     role: "Community Manager",
     bio: "Mark builds and nurtures our online community of tech enthusiasts. He is passionate about engaging with readers and helping them grow their tech skills through discussions and collaborations.",
-    image: "../assets/profile.png"
+    image: "../assets/profile.jpg"
   }
 ];
 
