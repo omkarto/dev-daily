@@ -7,10 +7,25 @@ import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import ListPage from './pages/ListPage';
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   return (
     <Router>
     <Header />
+    <ScrollToTop/>
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/blog/:id" element={<BlogPost />} />
@@ -25,3 +40,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+

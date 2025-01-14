@@ -3,7 +3,7 @@ import "./screen.css";
 import blogData1 from "../../list.json";
 import blogData2 from "../../list2.json";
 import Footer from "../Footer";
-import TopicSidebar from "./Toolbar";
+import TopicSidebar, { categories } from "./Toolbar";
 import ImageSlider from "./ImageSlide";
 import { Helmet } from "react-helmet";
 import { useState } from "react";
@@ -20,13 +20,6 @@ const HomePage = () => {
 
   };
 
-  const categories = [
-    "Technology",
-    "Design",
-    "WebDev",
-    "Programming",
-    "Aws",
-  ];
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
   const handleCategoryChange = (category: any) => {
     setCurrentCategory(category);
@@ -95,7 +88,6 @@ const HomePage = () => {
         <div className="content-wrapper">
           <aside className="sidebar">
             <TopicSidebar
-              categories={categories}
               currentCategory={currentCategory}
               onCategoryChange={handleCategoryChange}
             />
