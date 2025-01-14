@@ -12,17 +12,22 @@ const Footer = () => {
             We are passionate about sharing knowledge and insights across
             various domains of technology, design, and innovation.
           </p>
+
           <div className="social-icons">
-            <a href="#" className="social-icon">
+            <a
+              href="https://www.linkedin.com/in/devdaily-blog-74890a346/"
+              className="social-icon"
+            >
+              <i className="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61571694884586"
+              className="social-icon"
+            >
               <i className="fab fa-facebook"></i>
             </a>
-            <a href="#" className="social-icon">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" className="social-icon">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#" className="social-icon">
+
+            <a href="https://github.com/devTechdaily" className="social-icon">
               <i className="fab fa-linkedin"></i>
             </a>
           </div>
@@ -53,7 +58,7 @@ const Footer = () => {
             Melbourne.
           </p>
           <p>
-            <i className="fas fa-envelope"></i> devdaily@gmail.com
+            <i className="fas fa-envelope"></i> devdailyblog@gmail.com
           </p>
           {/* <p>
             <i className="fas fa-phone"></i> +1 (555) 123-4567

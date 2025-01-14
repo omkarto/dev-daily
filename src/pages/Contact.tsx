@@ -61,11 +61,11 @@ const ContactUs = () => {
               </div>
               <div className="detail-item">
                 <i className="fas fa-envelope"></i>
-                <span>devdaily@gmail.com</span>
+                <span> devdailyblog@gmail.com </span>
               </div>
               <div className="detail-item">
-                <i className="fas fa-phone"></i>
-                <span>+1 (555) 123-4567</span>
+                {/* <i className="fas fa-phone"></i> */}
+                {/* <span>+1 (555) 123-4567</span> */}
               </div>
             </div>
           </div>
@@ -73,10 +73,9 @@ const ContactUs = () => {
           <div className="social-links">
             <h2>Connect with Us</h2>
             <div className="social-icons">
-              <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
-              <a href="#" className="social-icon"><i className="fab fa-linkedin"></i></a>
-              <a href="#" className="social-icon"><i className="fab fa-github"></i></a>
-              <a href="#" className="social-icon"><i className="fab fa-instagram"></i></a>
+              <a href="https://github.com/devTechdaily" className="social-icon"><i className="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/devdaily-blog-74890a346/" className="social-icon"><i className="fab fa-github"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61571694884586" className="social-icon"><i className="fab fa-facebook"></i></a>
             </div>
           </div>
         </div>
