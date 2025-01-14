@@ -32,14 +32,14 @@ const Footer = () => {
         <div className="footer-section contact">
           <h3>Contact Us</h3>
           <p>
-            <i className="fas fa-map-marker-alt"></i> 123 Tech Street, Innovation City
+            <i className="fas fa-map-marker-alt"></i> 350, William street, Melbourne.
           </p>
           <p>
-            <i className="fas fa-envelope"></i> contact@yourblog.com
+            <i className="fas fa-envelope"></i> devdaily@gmail.com
           </p>
-          <p>
+          {/* <p>
             <i className="fas fa-phone"></i> +1 (555) 123-4567
-          </p>
+          </p> */}
         </div>
 
         <div className="footer-section newsletter">
@@ -56,7 +56,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 Your Blog Name. All Rights Reserved.</p>
+        <p>&copy; 2025 devdaily.xyz All Rights Reserved.</p>
       </div>
     </footer>
   );

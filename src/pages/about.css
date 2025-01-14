@@ -117,6 +117,35 @@
   background-color: #2980b9;
 }
 
+
+.cta-section form {
+  display: flex;
+  border-color: #2980b9;
+  justify-content: center;
+}
+
+.cta-section input {
+  flex-grow: 1;
+  max-width: 200px;
+  padding: 10px;
+  border-color: #2980b9;
+  border-radius: 4px 0 0 4px;
+}
+
+.cta-section button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+ 
+.cta-section button:hover {
+  background-color: #2980b9;
+}
+
 @media (max-width: 768px) {
   .team-section {
     flex-direction: column;

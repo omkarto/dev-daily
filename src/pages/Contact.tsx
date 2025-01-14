@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import './contact.css';
 import emailjs from '@emailjs/browser';
 
@@ -57,11 +57,11 @@ const ContactUs = () => {
             <div className="contact-details">
               <div className="detail-item">
                 <i className="fas fa-map-marker-alt"></i>
-                <span>123 Tech Street, Innovation City, Digital World</span>
+                <span>350, William street, Melbourne.</span>
               </div>
               <div className="detail-item">
                 <i className="fas fa-envelope"></i>
-                <span>contact@devtechdaily.com</span>
+                <span>devdaily@gmail.com</span>
               </div>
               <div className="detail-item">
                 <i className="fas fa-phone"></i>

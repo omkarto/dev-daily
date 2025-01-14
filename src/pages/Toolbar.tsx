@@ -9,7 +9,7 @@ const TopicSidebar = ({
 }: any) => {
   return (
     <div className="topic-sidebar">
-      <h3>Explore Topics</h3>
+      <h3>Popular Tags</h3>
       <ul>
         {categories.map((category) => (
           <li

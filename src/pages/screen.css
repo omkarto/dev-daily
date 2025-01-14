@@ -153,7 +153,6 @@ h1 {
 }
 
 .post-list {
-  max-width: 1200px;
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -207,6 +206,32 @@ h1 {
 @media (max-width: 768px) {
   .content-wrapper {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For tablets and small screens */
+  .main-content {
+      gap: 20px;
+  }
+  
+  .blog-section {
+      margin: 20px 0;
+      padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile screens */
+  .main-content {
+      gap: 15px;
+      flex-direction: column;
+  }
+  
+  .blog-section {
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
   }
 }
 

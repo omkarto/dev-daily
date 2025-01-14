@@ -8,21 +8,24 @@ import ImageSlider from "./ImageSlide";
 import { Helmet } from "react-helmet";
 import { useState } from "react";
 import { AnimatedSVG } from "../back";
+import WhyDailyTech from "./WhyUs";
 
 const HomePage = () => {
   const postsData1 = blogData1.posts;
   const postsData2 = blogData2.posts;
   const groupedPosts = {
-    "Section 1": postsData1,
-    "Section 2": postsData2,
+    "Latest": postsData1,
+    "Relevant": postsData2,
+    "Our Pick": postsData2,
+
   };
 
   const categories = [
     "Technology",
     "Design",
-    "Business",
-    "Lifestyle",
-    "Travel",
+    "WebDev",
+    "Programming",
+    "Aws",
   ];
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
   const handleCategoryChange = (category: any) => {
@@ -129,6 +132,10 @@ const HomePage = () => {
         <br />
         <br />
         <br />
+
+        <div>
+        <WhyDailyTech />
+        </div>
         <Footer />
       </div>
     </>

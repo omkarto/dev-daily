@@ -35,7 +35,15 @@ const AboutUs = () => {
         <div className="cta-section">
           <h2>Join Our Tech Community!</h2>
           <p>Be part of a growing community of tech lovers who are always learning, exploring, and innovating. Get the latest updates, tutorials, and more.</p>
-          <Link to="/subscribe" className="cta-button">Subscribe Now</Link>
+          <form>
+            <input 
+              type="email" 
+              placeholder="Enter your email" 
+              required 
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+          {/* <Link to="/subscribe" className="cta-button">Subscribe Now</Link> */}
         </div>
       </section>
     </div>
