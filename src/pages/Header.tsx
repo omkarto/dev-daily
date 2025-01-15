@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import useEmailForm from "../hooks/useEmailForm";
 import './header.css';
 
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [subscriptionType, setSubscriptionType] = useState(null);
+  const { formData, handleChange, handleSubmit } = useEmailForm("Header-subscribe");
 
   const openModal = (type:any) => {
     setSubscriptionType(type);
@@ -19,7 +21,7 @@ const Header = () => {
   const handleSubscription = (e:any) => {
     e.preventDefault();
     // Add subscription logic here
-    alert(`Subscribed with ${subscriptionType}`);
+    handleSubmit(e)
     closeModal();
   };
 
@@ -75,6 +77,8 @@ const Header = () => {
                 placeholder="Enter your email" 
                 required 
                 aria-label="Email address"
+                value={formData.email}
+                onChange={handleChange}
               />
             
               <button type="submit">

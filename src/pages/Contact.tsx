@@ -1,6 +1,6 @@
-import  { useState } from 'react';
+import { useState } from 'react';
+import { sendEmail } from '../email';
 import './contact.css';
-import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -10,7 +10,7 @@ const ContactUs = () => {
     message: ''
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
@@ -18,27 +18,18 @@ const ContactUs = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     // Add form submission logic
     console.log('Form submitted:', formData);
     alert('Thank you for your message! We will get back to you soon.');
+    sendEmail(formData.email,"contact",formData.name,formData.subject,formData.message)
     // Reset form
     setFormData({
       name: '',
       email: '',
       subject: '',
       message: ''
-    });
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-      to_email: 'recipient@example.com',
-      from_name: 'Sender Name',
-      message: 'This is a test email sent using EmailJS'
-    }, 'YOUR_PUBLIC_KEY')
-    .then((result) => {
-      console.log('Email sent successfully');
-    }, (error) => {
-      console.log('Failed to send email:', error);
     });
 
   };

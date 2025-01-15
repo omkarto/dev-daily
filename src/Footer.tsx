@@ -1,8 +1,10 @@
-import React from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
+import useEmailForm from "./hooks/useEmailForm";
 
 const Footer = () => {
+  const { formData, handleChange, handleSubmit } =
+    useEmailForm("Footer-subscribe");
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -67,8 +69,14 @@ const Footer = () => {
 
         <div className="footer-section newsletter">
           <h3>Subscribe to Our Newsletter</h3>
-          <form>
-            <input type="email" placeholder="Enter your email" required />
+          <form onSubmit={handleSubmit}>
+            <input
+              type="email"
+              value={formData.email}
+              placeholder="Enter your email"
+              onChange={handleChange}
+              required
+            />
             <button type="submit">Subscribe</button>
           </form>
         </div>

@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './about.css';
+import useEmailForm from "../hooks/useEmailForm";
 import { p1 } from '../profile';
+import './about.css';
 
 const AboutUs = () => {
+  const { formData, handleChange, handleSubmit } = useEmailForm("Footer-subscribe");
   return (
     <div className="about-us">
       <header className="about-header">
@@ -35,10 +35,12 @@ const AboutUs = () => {
         <div className="cta-section">
           <h2>Join Our Tech Community!</h2>
           <p>Be part of a growing community of tech lovers who are always learning, exploring, and innovating. Get the latest updates, tutorials, and more.</p>
-          <form>
+          <form onSubmit={handleSubmit}>
             <input 
               type="email" 
               placeholder="Enter your email" 
+              value={formData.email}
+              onChange={handleChange}
               required 
             />
             <button type="submit">Subscribe</button>
