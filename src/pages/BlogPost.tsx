@@ -3,9 +3,29 @@ import { Link } from 'react-router-dom';
 import './detail.css';
 import OpenGraphTags from '../OpenGraphTag';
 import { baseUrl } from '../App';
+import { formattedDate } from './BlogList';
 
 const BlogPost = ( ) => {
-  const post = pageData
+  const post = pageData;
+
+    const handleShare = async () => {
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: post.title,
+            text: post.body.substring(0, 160),
+            url: window.location.href,
+          });
+          console.log('Content shared successfully');
+        } catch (error) {
+          console.error('Error sharing content:', error);
+        }
+      } else {
+        console.log('Web Share API not supported');
+        // Implement fallback sharing method here
+      }
+    };
+
   return (
     <article className="blog-detail">
 
@@ -21,8 +41,7 @@ const BlogPost = ( ) => {
         <div className="hero-overlay">
           <h1>{post.title}</h1>
           <div className="meta">
-            <span className="date">{post.date}</span>
-            <span className="author">By {post.author}</span>
+            <span className="date">{formattedDate(post.date)}</span>
           </div>
         </div>
       </div>
@@ -30,7 +49,9 @@ const BlogPost = ( ) => {
         <aside className="sidebar">
           <div className="category-tag">{post.category}</div>
           <div className="share-buttons">
-            <button>Share</button>
+            <button onClick={handleShare}>
+            <i className="fas fa-share-alt"></i> Share
+             </button>
           </div>
         </aside>
         <main className="main-content">

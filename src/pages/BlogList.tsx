@@ -1,9 +1,9 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./bloglist.css";
 
-const BlogList = ({ blogs }: any) => {
-const formattedDate =(d:string)=>{
+
+export const formattedDate =(d:string)=>{
   const date = new Date(d);
   // Format the date using Intl.DateTimeFormat
   const datef = new Intl.DateTimeFormat('en-US', {
@@ -18,9 +18,7 @@ const formattedDate =(d:string)=>{
 }
 
 
-  
-
-
+const BlogList = ({ blogs }: any) => {
   const [bookmarks, setBookmarks] = useState([]);
   useEffect(() => {
     (async () => {
