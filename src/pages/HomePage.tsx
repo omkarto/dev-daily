@@ -9,6 +9,8 @@ import { Helmet } from "react-helmet";
 import { useState } from "react";
 import { AnimatedSVG } from "../back";
 import WhyDailyTech from "./WhyUs";
+import OpenGraphTags from "../OpenGraphTag";
+import { baseUrl } from "../App";
 
 const HomePage = () => {
   const postsData1 = blogData1.posts;
@@ -51,6 +53,12 @@ const HomePage = () => {
 
   return (
     <>
+      <OpenGraphTags 
+        title="Daily Tech Blog"
+        description="Stay updated with the latest in technology and web development."
+        image={`${baseUrl}/images/homepage-og-image.jpg`}
+        url={baseUrl}
+      />
       <Helmet>
         <script type="application/ld+json">
           {`

@@ -10,6 +10,7 @@ import ListPage from './pages/ListPage';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+export const baseUrl = "https://devdaily.xyz"
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();

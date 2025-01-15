@@ -1,12 +1,22 @@
-import  { useState } from 'react';
 import pageData from '../../page.json';
 import { Link } from 'react-router-dom';
 import './detail.css';
+import OpenGraphTags from '../OpenGraphTag';
+import { baseUrl } from '../App';
 
 const BlogPost = ( ) => {
   const post = pageData
   return (
     <article className="blog-detail">
+
+      <OpenGraphTags 
+        title={post.title}
+        description={post.body.substring(0, 160)}
+        image={`${baseUrl}${post.heroImage}`}
+        url={`${baseUrl}/blog/${post.id}`}
+        type="article"
+      />
+      
       <div className="hero-image" style={{backgroundImage: `url(${post.heroImage})`}}>
         <div className="hero-overlay">
           <h1>{post.title}</h1>
