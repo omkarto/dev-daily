@@ -43,7 +43,6 @@ export const AnimatedSVG = (i:number) => {
   }
 
   useEffect(() => {
-    console.log(5*i,"col")
       setColors((prevColors) =>
         prevColors.map((color) =>
           lightenColor(color, 5+i)
