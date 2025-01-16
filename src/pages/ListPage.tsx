@@ -1,4 +1,4 @@
-import blogData1 from "../../list.json";
+import blogData1 from "../../data/list.json";
 import Footer from "../Footer";
 import BlogList from "./BlogList";
 import "./screen.css";

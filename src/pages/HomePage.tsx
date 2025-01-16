@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./screen.css";
-import blogData1 from "../../list.json";
-import blogData2 from "../../list2.json";
+import blogData1 from "../../data/list.json";
+import blogData2 from "../../data/list2.json";
 import Footer from "../Footer";
 import TopicSidebar, { categories } from "./Toolbar";
 import ImageSlider from "./ImageSlide";
@@ -105,11 +105,11 @@ const HomePage = () => {
               <section key={category} className="blog-section">
                 <h2>{category}</h2>
                 <div className="post-list">
-                  {categoryPosts.map((post) => (
+                  {categoryPosts.map((post:any) => (
                     <div key={post.id} className="post-item">
                       <div className="post-item-content">
                         <h3>{post.title}</h3>
-                        <p>{post.excerpt}</p>
+                        <p>{post.body?.replace(/<[^>]+>/g, "")?.substring(0, 150)}...</p>
                         <Link to={`/blog/${post.id}`}>Read more</Link>
                       </div>
                     </div>

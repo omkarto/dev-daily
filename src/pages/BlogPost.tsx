@@ -1,4 +1,4 @@
-import pageData from '../../page.json';
+import pageData from '../../data/page.json';
 import { Link } from 'react-router-dom';
 import './detail.css';
 import OpenGraphTags from '../OpenGraphTag';

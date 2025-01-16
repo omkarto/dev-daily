@@ -95,7 +95,7 @@ const BlogList = ({ blogs }: any) => {
                   ))}
                 </div>
                 <div className="crayons-story__snippet">
-                  {blog.excerpt?.replace(/<[^>]+>/g, "")?.substring(0, 150)}...
+                  {blog.body?.replace(/<[^>]+>/g, "")?.substring(0, 150)}...
                 </div>
                 <div className="crayons-story__bottom">
                   <div className="crayons-story__details"></div>

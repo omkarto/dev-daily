@@ -1,0 +1,14 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Getting Started with React",
+        "body": "<p>Artificial Intelligence is rapidly changing the landscape of web development. From chatbots to personalized user experiences, AI is revolutionizing how we interact with websites and web applications.</p><h2>The Rise of AI-Powered Web Development</h2><p>In recent years, we've seen a significant increase in the use of AI technologies in web development. These advancements are not just improving user experiences but also streamlining the development process itself.</p><h2>Key Areas Where AI is Making an Impact</h2><ul><li>Automated Code Generation</li><li>Intelligent Design Systems</li><li>Predictive User Behavior Analysis</li><li>Enhanced Security Measures</li></ul><p>As we look to the future, it's clear that AI will continue to play a crucial role in shaping the web development landscape. Developers who embrace these technologies will be well-positioned to create more innovative, efficient, and user-friendly web experiences.</p>",
+        "date": "2025-01-05T12:00:00Z",
+        "tags":["js"],
+        "category": "Technology",
+        "heroImage": "https://example.com/images/ai-hero.jpg"
+      }
+    ]
+  }
+  
