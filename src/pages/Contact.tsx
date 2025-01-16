@@ -1,44 +1,52 @@
-import { useState } from 'react';
-import { sendEmail } from '../email';
-import './contact.css';
+import { useState } from "react";
+import { sendEmail } from "../email";
+import "./contact.css";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     // Add form submission logic
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
-    sendEmail(formData.email,"contact",formData.name,formData.subject,formData.message)
+    console.log("Form submitted:", formData);
+    alert("Thank you for your message! We will get back to you soon.");
+    sendEmail(
+      formData.email,
+      "contact",
+      formData.name,
+      formData.subject,
+      formData.message
+    );
     // Reset form
     setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
     });
-
   };
 
   return (
     <div className="contact-page">
       <div className="contact-header">
         <h1>Contact Us</h1>
-        <p>We'd love to hear from you! Reach out for any inquiries or collaboration.</p>
+        <p>
+          We'd love to hear from you! Reach out for any inquiries or
+          collaboration.
+        </p>
       </div>
 
       <div className="contact-container">
@@ -64,9 +72,21 @@ const ContactUs = () => {
           <div className="social-links">
             <h2>Connect with Us</h2>
             <div className="social-icons">
-              <a href="https://github.com/devTechdaily" className="social-icon"><i className="fab fa-linkedin"></i></a>
-              <a href="https://www.linkedin.com/in/devdaily-blog-74890a346/" className="social-icon"><i className="fab fa-github"></i></a>
-              <a href="https://www.facebook.com/profile.php?id=61571694884586" className="social-icon"><i className="fab fa-facebook"></i></a>
+              <a href="https://github.com/devTechdaily" className="social-icon">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/devdaily-blog-74890a346/"
+                className="social-icon"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61571694884586"
+                className="social-icon"
+              >
+                <i className="fab fa-facebook"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -126,7 +146,9 @@ const ContactUs = () => {
               ></textarea>
             </div>
 
-            <button type="submit" className="submit-btn">Send Message</button>
+            <button type="submit" className="submit-btn">
+              Send Message
+            </button>
           </form>
         </div>
       </div>
