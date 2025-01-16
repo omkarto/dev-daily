@@ -9,21 +9,10 @@ import ListPage from './pages/ListPage';
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import {setUpDb} from './db'
-
-
-
 export const baseUrl = "https://devdaily.xyz"
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
-
-  useEffect(() => {
-    setUpDb();
-  }, []);
-
-
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
