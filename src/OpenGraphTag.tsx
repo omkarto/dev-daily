@@ -10,7 +10,8 @@ const OpenGraphTags = ({ title, description, image, url, type = 'website' }:any)
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
       <meta property="og:type" content={type} />
-      
+      <meta name="google-adsense-account" content="ca-pub-8479589675657965" />
+
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />

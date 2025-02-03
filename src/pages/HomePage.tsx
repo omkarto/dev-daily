@@ -78,6 +78,7 @@ const HomePage = () => {
           name="description"
           content="Your go-to resource for cutting-edge tech insights, creative solutions, and inspiring ideas. Empower your mind and elevate your skills daily."
         />
+        <meta name="google-adsense-account" content="ca-pub-8479589675657965" />
         <meta
           name="keywords"
           content="tech insights, creative solutions, tech skills, dev tech"
