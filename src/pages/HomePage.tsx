@@ -71,6 +71,8 @@ const HomePage = () => {
           }
         `}
         </script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8479589675657965"
+        crossOrigin="anonymous"></script>
         <title>Dev Tech Daily - Cutting-edge Tech Insights</title>
         <meta
           name="description"
